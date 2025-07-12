@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MY PROFILE</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <!--ヘッダー部分-->
+    <header>
+     <div class="container">
+      <nav>
+        <ul>
+         <li><a href="#profile">プロフィール</a></li>
+         <li><a href="#skills">スキル</a></li>
+         <li><a href="#hobbies">趣味・特技</a></li>
+         <li><a href="#history">経歴</a></li>
+         <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+        </nav>
+     </div>   
+    </header>
+
+    <!--プロフィールセクション-->
+    <section id="profile" class="profile">
+     <div class="container">
+        <h1>MY PROFILE</h1>
+        <div class="profile-content">
+         <div class="profile-image">
+           <img src="images/profile.jpg" alt="プロフィール画像"/> 
+         </div>
+         <div class="profile-text">
+            <h2>Yuka Taka</h2>
+            <p class="profile-title">ウエブ開発者</p>
+            <p class="profile-description">
+            はじめまして！私はWebフロントエンド開発を専門としているエンジニアです。
+          ユーザーにとって使いやすく美しいインターフェースを作ることに情熱を持っています。
+          HTML/CSS、JavaScriptを用いた開発を得意としています。
+            </p>
+         </div>
+         </div>
+     </div>
+    </section>
+
+    <!--スキルセクション-->
+    <section id="skills" class="skills">
+     <div class="container">
+      <h2 class="section-title">スキル</h2>
+       <div class="skills-container">
+        <div class="skill-item">
+         <div class="skill-name">HTML/CSS</div>
+         <div class="skill-bar">
+          <div class="skill-level" style="width: 90%"></div>
+         </div>
+       </div>
+       <div class="skill-item">
+         <div class="skill-name">JavaScript</div>
+         <div class="skill-bar">
+          <div class="skill-level" style="width: 75%"></div>
+         </div>
+       </div>
+       <div class="skill-item">
+        <div class="skill-name">React</div>
+        <div class="skill-bar">
+         <div class="skill-level" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+       <div class="skill-name">UI/UXデザイン</div>
+       <div class="skill-bar">
+        <div class="skill-level" style="width: 70%"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    </section>
+
+    <!-- 趣味・特技セクション -->
+    <section id="hobbies" class="hobbies">
+     <div class="container">
+     <h2 class="section-title">趣味・特技</h2>
+     <div class="hobbies-container">
+     <div class="hobby-item">
+      <div class="hobby-icon"></div>
+      <h3>WINE</h3>
+      <p>I like drinking wines with my friends</p>
+    </div>
+
+    <div class="hobby-item">
+     <div class="hobby-icon"></div>
+     <h3>MUSIC</h3>
+     <p>I like playing piano and listening classical music</p>
+    </div>
+ </div>
+</div>
+    </section>
+
+    <!-- 経歴セクション -->
+    <section id="history" class="history">
+ <div class="container">
+    <h2 class="section-title">経歴</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">2018年 - 現在
+            </div>
+            <div class="timeline-content">
+                <h3>Kanagawa, Japan</h3>
+                <p>フロントエンド開発者として、企業向けWebアプリケーションの開発に従事</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">2018年 - 2008年</div>
+            <div class="timeline-content">
+                <h3>Washington, DC, USA</h3>
+                <p>Webデザイナーとして、コーポレートサイトのデザインと実装を担当</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">2001年 - 2008年</div>
+            <div class="timeline-content">
+                <h3>Knoxville, TN, USA</h3>
+                <p>コンピュータサイエンスを専攻し、Webプログラミングを学ぶ</p>
+            </div>
+        </div>
+    </div>     
+ </div>        
+</section>
+
+    <!-- お問い合わせフォーム部分 -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">お問い合わせ</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="message">メッセージ</label>
+                <textarea id="mesage" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">送信する</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- フッター部分 -->
+    <footer>
+     <div class="container">
+        <p>2023 山田太郎 All Rights Reserved.</p>
+     </divdiv>
+    </footer>
+  </body>
+</html>
