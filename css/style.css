@@ -1,0 +1,314 @@
+/* style.css */
+
+/*基本設定*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/*ヘッダー*/
+header {
+    background-color: #333;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color:  #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #66c2ff;
+}
+
+/* プロフィールセクション */
+.profile {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.profile h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    margin-bottom: 30px;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f0f0f0;
+}
+
+.profile-text {
+    text-align: center;
+}
+
+.profile-text h2 {
+ font-size: 2rem;
+ margin-bottom: 10px;
+}
+
+.profile-title {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.profile-description {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* スキルセクション */
+.skills {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.skills-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #66c2ff;
+    border-radius: 5px;
+}
+
+/* 趣味セクション */
+.hobbies {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hobby-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hobby-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hobby-item h3{
+    margin-bottom: 10px;
+}
+
+/* 経歴セクション */
+.history {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+ }
+
+ .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 2px;
+    background-color: #66c2ff;
+ }
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 80px; 
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    text-align: right;
+    font-weight: bold;
+    color: #66c2ff;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+}
+
+/* お問い合わせセクション */
+.contact {
+    padding-bottom: 80px 0;
+    background-color: #fff;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius:5px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #66c2ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3399ff;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ここに各セクションのスタイルを追加してください */
+/* スマートフォン向けのスタイル（基本スタイル） */
+/* 既に記述したスタイルがここに該当します */
+
+/* タブレット向けのスタイル */
+@media (min-width: 768px) {
+    .profile-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .profile-image {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .profile-text {
+        text-align: left;
+    }
+
+    .hobbies-container {
+        flex-direction: row;
+    }
+}
+
+/* デスクトップ向けのスタイル */
+@media (min-width: 1024px) {
+    .timeline::before {
+        left: 120px;
+    }
+
+    .timeline-item {
+        padding-left: 150px;
+    }
+
+    .timeline-date {
+        width: 120px;
+    }
+}
